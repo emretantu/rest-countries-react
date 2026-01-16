@@ -1,0 +1,8 @@
+@use "sass:math";
+
+@function rem($pixels) {
+  @if type-of($value: $pixels) != "number" {
+    @error "The value #{$pixels} is not a number.";
+  }
+  @return math.div($pixels / 16px) * 1rem;
+}
