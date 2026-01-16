@@ -1,0 +1,81 @@
+@use "sass:map";
+
+@use "./functions";
+@use "./design-system-tokens" as tokens;
+
+@mixin _typography-base {
+  font-family: #{map.get(tokens.$font-families, "primary")}, #{map.get(tokens.$font-families, "primary-fallback")};
+  letter-spacing: 0;
+}
+
+@mixin text-preset-1() {
+  @include _typography-base;
+  font-weight: map.get(tokens.$font-weights, "extra-bold");
+  font-size: functions.rem(32px);
+  line-height: 1.38;
+}
+
+@mixin text-preset-2() {
+  @include _typography-base;
+  font-weight: map.get(tokens.$font-weights, "extra-bold");
+  font-size: functions.rem(24px);
+  line-height: 1.38;
+}
+
+@mixin text-preset-3() {
+  @include _typography-base;
+  font-weight: map.get(tokens.$font-weights, "extra-bold");
+  font-size: functions.rem(18px);
+  line-height: 1.45;
+}
+
+@mixin _text-preset-4 {
+  @include _typography-base;
+  font-size: functions.rem(16px);
+  line-height: 2;
+}
+
+@mixin text-preset-4-semi-bold() {
+  @include _text-preset-4;
+  font-weight: map.get(tokens.$font-weights, "semi-bold");
+}
+
+@mixin text-preset-4-light() {
+  @include _text-preset-4;
+  font-weight: map.get(tokens.$font-weights, "light");
+}
+
+@mixin text-preset-5-regular() {
+  @include _typography-base;
+  font-weight: map.get(tokens.$font-weights, "regular");
+  font-size: functions.rem(14px);
+  line-height: 1.45;
+}
+
+@mixin text-preset-5-light() {
+  @include _typography-base;
+  font-weight: map.get(tokens.$font-weights, "light");
+  font-size: functions.rem(14px);
+  line-height: 2.25;
+}
+
+@mixin _text-preset-6() {
+  @include _typography-base;
+  font-size: functions.rem(12px);
+  line-height: 1.35;
+}
+
+@mixin text-preset-6-semi-bold() {
+  @include _text-preset-6;
+  font-weight: map.get(tokens.$font-weights, "semi-bold");
+}
+
+@mixin text-preset-6-regular() {
+  @include _text-preset-6;
+  font-weight: map.get(tokens.$font-weights, "regular");
+}
+
+@mixin text-preset-6-light() {
+  @include _text-preset-6;
+  font-weight: map.get(tokens.$font-weights, "light");
+}
