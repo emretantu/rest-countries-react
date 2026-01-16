@@ -1,8 +1,7 @@
-@use "sass:map";
 @use "../abstracts/design-system-tokens" as tokens;
 
 @font-face {
-  font-family: #{map.get(tokens.$font-families, "primary")};
+  font-family: #{tokens.$ff-primary};
   src: url("/src/assets/fonts/nunito.ttf") format('truetype');
   font-weight: 200 900;
   font-style: normal;
@@ -10,7 +9,7 @@
 }
 
 @font-face {
-  font-family: #{map.get(tokens.$font-families, "primary")};
+  font-family: #{tokens.$ff-primary};
   src: url("/src/assets/fonts/nunito-italic.ttf") format('truetype');
   font-weight: 200 900;
   font-style: italic;

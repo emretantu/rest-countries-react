@@ -1,43 +1,35 @@
 @use "./functions";
 
-$palette: (
-  "white": 0 100% 100%,
-  "black": 0 0% 0%,
-  "gray-950": 200 15% 8%,
-  "gray-400": 0 0% 50%,
-  "gray-350": 0 0% 59%,
-  "gray-300": 0 0% 70%,
-  "gray-250": 0 0% 77%,
-  "gray-50": 0 0% 99%,
-  "blue-950": 207 26% 17%,
-  "blue-900": 209 23% 22%
-);
+$clr-white: 0 100% 100%;
+$clr-black: 0 0% 0%;
+$clr-gray-950: 200 15% 8%;
+$clr-gray-400: 0 0% 50%;
+$clr-gray-350: 0 0% 59%;
+$clr-gray-300: 0 0% 70%;
+$clr-gray-250: 0 0% 77%;
+$clr-gray-50: 0 0% 99%;
+$clr-blue-950: 207 26% 17%;
+$clr-blue-900: 209 23% 22%;
 
-$spacing: (
-  "spacing-100": functions.rem(8px),
-  "spacing-200": functions.rem(16px),
-  "spacing-300": functions.rem(24px),
-  "spacing-400": functions.rem(32px),
-  "spacing-500": functions.rem(40px),
-  "spacing-600": functions.rem(48px),
-  "spacing-700": functions.rem(56px),
-  "spacing-800": functions.rem(64px),
-  "spacing-900": functions.rem(72px),
-  "spacing-1000": functions.rem(80px)
-);
+$spacing-100: functions.rem(8px);
+$spacing-200: functions.rem(16px);
+$spacing-300: functions.rem(24px);
+$spacing-400: functions.rem(32px);
+$spacing-500: functions.rem(40px);
+$spacing-600: functions.rem(48px);
+$spacing-700: functions.rem(56px);
+$spacing-800: functions.rem(64px);
+$spacing-900: functions.rem(72px);
+$spacing-1000: functions.rem(80px);
 
-$font-families: (
-  "primary": "Nunito",
-  "primary-fallback": "sans-serif"
-);
+$ff-primary: "Nunito";
+$ff-primary-fallback: "sans-serif";
 
-$font-weights: (
-  "extra-light": 200,
-  "light": 300,
-  "regular": 400,
-  "medium": 500,
-  "semi-bold": 600,
-  "bold": 700,
-  "extra-bold": 800,
-  "black": 900,
-);
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;
