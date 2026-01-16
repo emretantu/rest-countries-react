@@ -1,9 +1,10 @@
 @use "sass:math";
+@use "meta:type-of";
 
 // Utils
 
 @function rem($pixels) {
-  @if type-of($pixels) != "number" {
+  @if meta.type-of($pixels) != "number" {
     @error "The value #{$pixels} is not a number.";
   }
   @return math.div($pixels, 16px) * 1rem;
