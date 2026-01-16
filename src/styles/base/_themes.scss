@@ -1,13 +1,13 @@
 @use "/src/styles/abstracts/design-system-tokens" as tokens;
 
 @each $theme, $variables in tokens.$themes {
-  
-  $selector: if(
-    $theme == "light",
-    ":root, :root[data-theme='#{$theme}']",
-    ":root[data-theme='#{$theme}']"
-  );
 
+  $selector: ":root[data-theme='#{$theme}']";
+
+  @if $theme == "light" {
+    $selector: $selector + ", :root";
+  }
+  
   #{$selector} {
 
     @each $name, $value in $variables {
