@@ -4,12 +4,31 @@ $clr-white: 0 100% 100%;
 $clr-black: 0 0% 0%;
 $clr-gray-950: 200 15% 8%;
 $clr-gray-400: 0 0% 50%;
-$clr-gray-350: 0 0% 59%;
-$clr-gray-300: 0 0% 70%;
-$clr-gray-250: 0 0% 77%;
+// $clr-gray-350: 0 0% 59%;
+// $clr-gray-300: 0 0% 70%;
+// $clr-gray-250: 0 0% 77%;
 $clr-gray-50: 0 0% 99%;
 $clr-blue-950: 207 26% 17%;
 $clr-blue-900: 209 23% 22%;
+
+$themes: (
+  "light": (
+    "bg-color": hsl($clr-gray-50),
+    "bg-secondary-color": hsl($clr-white),
+    "text-color": hsl($clr-gray-950),
+    "country-cards-img-bg-color": hsl($clr-gray-400),
+    "search-bar-front-color": hsl($clr-gray-400),
+    "shadow-color": hsl($clr-black),
+  ),
+  "dark": (
+    "bg-color": hsl($clr-blue-950),
+    "bg-secondary-color": hsl($clr-blue-900),
+    "text-color": hsl($clr-white),
+    "country-cards-img-bg-color": hsl($clr-gray-400),
+    "search-bar-front-color": hsl($clr-white),
+    "shadow-color": hsl($clr-black),
+  )
+);
 
 $spacing-100: functions.rem(8px);
 $spacing-200: functions.rem(16px);
