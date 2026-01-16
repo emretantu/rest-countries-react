@@ -24,4 +24,20 @@ $spacing: (
   "spacing-800": functions.rem(64px),
   "spacing-900": functions.rem(72px),
   "spacing-1000": functions.rem(80px)
-)
+);
+
+$font-families: (
+  "primary": "Nunito",
+  "primary-fallback": "sans-serif"
+);
+
+$font-weights: (
+  "extra-light": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "black": 900,
+);
